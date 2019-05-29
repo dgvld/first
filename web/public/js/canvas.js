@@ -52,9 +52,27 @@ resizeReset();
 	}	
 	drawImage();*/
 	drawDot();
-	    canvas.onmousemove = function (event) {
-		myX = event.offsetX;
-		myY = event.offsetY;
-	}
 
-});	
+	   canvas.onmousemove = function (event)
+		{
+			myX = event.offsetX;
+			myY = event.offsetY;
+		}
+
+
+    function positionHandler(e) {
+        if ((e.clientX)&&(e.clientY)) {
+            myX = e.clientX;
+            myY = e.clientY;
+        } else if (e.targetTouches) {
+            myX = e.targetTouches[0].clientX;
+            myY = e.targetTouches[0].clientY - 100;
+            e.preventDefault();
+        }
+    }
+
+    canvas.addEventListener('touchstart', positionHandler, false);
+    canvas.addEventListener('touchmove', positionHandler, false);
+
+
+});
