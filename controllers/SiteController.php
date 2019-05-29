@@ -130,5 +130,8 @@ class SiteController extends Controller
             }
         }
     }
-
+    public function actionCanvas()
+    {
+        return $this->render('canvas');
+    }
 }
