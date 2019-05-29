@@ -29,7 +29,7 @@ class PublicAsset extends AssetBundle
         "public/css/canvas.css"
     ];
     public $js = [
-        "public/js/jquery-3.4.1.min.js",
+//        "public/js/jquery-1.11.3.min.js",
         "public/js/bootstrap.min.js",
         "public/js/owl.carousel.min.js",
         "public/js/jquery.stickit.min.js",
@@ -38,6 +38,6 @@ class PublicAsset extends AssetBundle
         "public/js/canvas.js"
     ];
     public $depends = [
-       
+
     ];
 }

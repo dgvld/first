@@ -4,7 +4,7 @@
 let resizeReset = function() {
 	w = canvas.width = window.innerWidth;
 	h = canvas.height = window.innerHeight;
-}	
+};	
 window.addEventListener("resize", function(){
 	deBouncer();
 });
@@ -18,11 +18,11 @@ let deBouncer = function() {
 resizeReset();
 
 
-	var myColor = "black";
+	/*var myColor = "black";
 	document.getElementById('color').oninput = function(){
 		myColor = this.value;
 	}	
-    
+    */
  
     // Кол-во шагов в одном напрв=авлении;
 	var timer;
